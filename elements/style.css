@@ -1,0 +1,41 @@
+* {
+    background-color: #ffc8dd;
+    color: white;
+}
+
+@font-face {
+    font-family: Baloo;
+    src: url(Baloo-Regular.ttf);
+}
+
+@font-face {
+    font-family: Baloo2;
+    src: url(Baloo2-VariableFont_wght.ttf);
+}
+
+h1 {
+    text-align: center;
+    margin: auto;
+    font-family: Baloo;
+    font-size: 10rem;
+}
+
+p {
+    font-family: Baloo2;
+    font-size: 5rem;
+    margin: auto;
+    text-align: center;
+}
+
+p a:hover {
+    color: #a2d2ff;
+}
+
+#logo {
+    align-items: center;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+    height: 20%;
+}
