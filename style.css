@@ -222,7 +222,11 @@ iframe {
     margin-bottom: 5%;
 }
 
-#docs button {
+#docs {
+    height: auto;
+}
+
+#docs button, form button {
     width: 10rem;
     height: 3rem;
     border: none;
@@ -242,6 +246,61 @@ iframe {
 }
 
 #docs button:hover {
+    cursor: pointer;
+    background-color: #a2d2ff;
+}
+
+
+/* Contact */
+
+#contact {
+    height: auto;
+    margin-top: 2rem;
+}
+
+#contact h3 {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+form {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+form input, form textarea, form button, form label {
+    display: block;
+    width: 25%; /* Adjust width as needed */
+    margin: auto; /* Add spacing between elements */
+    padding: 0.5rem; /* Add padding for better usability */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    margin-bottom: 2rem;
+    font-family: Baloo2;
+}
+
+form label {
+    font-size: 2rem;
+    font-family: Baloo2;
+}
+
+form button {
+    width: 15%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+input:active, textarea:active, button:active {
+    outline: #cdb4db;
+}
+
+form button {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+form button:hover {
     cursor: pointer;
     background-color: #a2d2ff;
 }
