@@ -21,24 +21,48 @@
         </nav>
     </header>
     <section id="home">
-        <h1>Brides of Yeshua</h1>
-        <h3>Founded by Sky; led by Yeshua</h3>
+        <div class="overlay"></div>
+        <h1 id="title">Brides of Yeshua</h1>
+        <h3 id="subtitle">Founded by Sky; led by Yeshua</h3>
     </section>
     <section id="about">
-        <h1>About</h1>
-        <h3>About the Ministry</h3>
+        <h1 class="header">About the Ministry</h1>
+        <!-- <h3 class="subheader">About the Ministry</h3> -->
+         <img src="images/logo.png" alt="Brides of Yeshua logo" id="about-logo">
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam inventore natus eos dolorem magni quidem ab velit nemo corrupti voluptas placeat fugiat in, voluptate molestiae quaerat laborum vitae at molestias!</p>
+         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos blanditiis officiis mollitia eaque repellendus hic autem assumenda rerum maiores rem nulla, pariatur corporis, quam, fugit voluptatibus iste soluta. Ab, minus.</p>
     </section>
     <section id="videos">
-        <h1>Videos</h1>
-        <h3>Current Video Teachings</h3>
+        <h1 class="header">Video Teachings</h1>
+        <!-- <h3 class="subheader">Current Video Teachings</h3> -->
+        <div class="video-row" id="row1">
+            <iframe width="25%" height="auto" src="https://www.youtube.com/embed/E5FuIIpGJAA?si=EfAtDMM9Wh689bEr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         </div>
+         <h3 class="subheader">Want to see more? Navigate to the channel <a href="https://www.youtube.com/@bridesofyeshua" target="_blank">here!</a></h3>
     </section>
     <section id="docs">
-        <h1>Documents</h1>
-        <h3>Current Documents</h3>
+        <h1 class="header">Documents</h1>
+        <!-- <h3 class="subheader">Current Documents</h3> -->
+         <div class="docs-row" id="docs-row-1">
+            <div class="doc-rec">
+                <h3 class="doc-head">Document 1</h3>
+                <p class="doc-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores id minima quis rerum nam autem deleniti, fugiat explicabo vero libero consequuntur, omnis sit! Nemo, dolor magnam ducimus aut error facere?</p>
+            </div>
+            <div class="doc-rec">
+                <h3 class="doc-head">Document 2</h3>
+                <p class="doc-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores id minima quis rerum nam autem deleniti, fugiat explicabo vero libero consequuntur, omnis sit! Nemo, dolor magnam ducimus aut error facere?</p>
+            </div>
+            <div class="doc-rec">
+                <h3 class="doc-head">Document 3</h3>
+                <p class="doc-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores id minima quis rerum nam autem deleniti, fugiat explicabo vero libero consequuntur, omnis sit! Nemo, dolor magnam ducimus aut error facere?</p>
+            </div>
+            <h3>Browse the entire collection by navigating to the catalogue.</h3>
+            <button><a href="catologue.html">Catalogue</a></button>
+         </div>
     </section>
     <section id="contact">
-        <h1>Contact</h1>
-        <h3>Contact Information</h3>
+        <h1 class="header">Contact</h1>
+        <!-- <h3 class="subheader">Contact Information</h3> -->
         <form action="submit_form.php" method="POST">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>

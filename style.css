@@ -3,6 +3,7 @@ body {
     color: white;
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
+    overflow-x: hidden;
 }
 
 @font-face {
@@ -15,18 +16,32 @@ body {
     src: url(Baloo2-VariableFont_wght.ttf);
 }
 
-h1 {
+section {
+    width: 100vw;
+    height: 100vh;
+}
+
+.header {
     text-align: center;
     margin: auto;
     font-family: Baloo;
-    font-size: 10rem;
+    font-size: 5rem;
+    margin-top: 5%;
+}
+
+.subheader {
+    text-align: center;
+    margin: auto;
+    font-family: Baloo2;
+    font-size: 3rem;
 }
 
 p {
     font-family: Baloo2;
-    font-size: 5rem;
+    font-size: 1.5rem;
     margin: auto;
     text-align: center;
+    width: 50ch;
 }
 
 p a:hover {
@@ -37,6 +52,15 @@ p a:hover {
     display: none;
 }
 
+a:hover {
+    cursor: pointer;
+    color: #a2d2ff;
+}
+
+/* a:visited {
+    color: #aea4ff;
+} */
+
 /* Beginning of specified CSS styles for each section */
 
 /* Header */
@@ -46,7 +70,7 @@ nav {
     top: 0;
     left: 0; /* Ensure the nav starts from the left edge */
     width: 100%; /* Make the nav span the full width of the viewport */
-    background-color: #ffafcc;
+    background-color: #00000000;
     padding: 3% 0; /* Add vertical padding for height */
     text-align: center;
     display: flex;
@@ -54,6 +78,7 @@ nav {
     justify-content: center;
     margin: 0; /* Remove any margin around the nav */
     box-sizing: border-box; /* Include padding in the element's dimensions */
+    z-index: 3;
 }
 
 nav ul {
@@ -62,11 +87,13 @@ nav ul {
     margin-top: 1%;
     position: fixed;
     top: 0;
+    z-index: 3;
 }
 
 nav ul li {
     display: inline;
     margin: 0 15px;
+    z-index: 3;
 }
 
 nav ul li a {
@@ -74,6 +101,7 @@ nav ul li a {
     color: #fff;
     font-family: Baloo2;
     font-size: 2rem;
+    z-index: 1;
 }
 
 nav ul li a:hover {
@@ -82,3 +110,138 @@ nav ul li a:hover {
 
 /* Main Content */
 
+/* Home */
+
+#home {
+    background-image: url(images/hands_in_prayer.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    background-color: #4b021e47;
+    z-index: 2;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+#title {
+    font-size: 10rem;
+    margin-top: 10%;
+    margin-bottom: 0;
+    font-family: Baloo;
+    text-align: center;
+    z-index: 1;
+}
+
+#subtitle {
+    font-size: 5rem;
+    text-align: center;
+    font-family: Baloo2;
+    margin-top: 0;
+    z-index: 1;
+}
+
+
+/* About */
+
+
+#about-logo {
+    width: 20%;
+    margin: 2.5% auto;
+    display: block;
+}
+
+
+/* Video section */
+
+#videos {
+    height: auto;
+    margin-top: 2rem;
+}
+
+#videos h3 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+iframe {
+    border: none;
+    margin: 1% 2.5%;
+}
+
+.video-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#videos a {
+    color: #cdb4db;
+}
+
+#videos a:hover {
+    color: #a2d2ff;
+}
+
+
+/* Documents */
+
+#docs-row-1 {
+    margin-top: 2.5%;
+    text-align: center;
+}
+
+.doc-rec {
+    display:inline-block;
+    background-color: #a2d2ff;
+    width: 25%;
+    height: auto;
+    margin: 0 2.5%;
+}
+
+.doc-head {
+    text-align: center;
+    font-size: x-large;
+    margin: 5%;
+}
+
+.doc-text {
+    font-size: medium;
+    text-align: left;
+    width: 35ch;
+    margin-bottom: 5%;
+}
+
+#docs button {
+    width: 10rem;
+    height: 3rem;
+    border: none;
+    background-color: #cdb4db;
+}
+
+#docs button a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#docs h3 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#docs button:hover {
+    cursor: pointer;
+    background-color: #a2d2ff;
+}
