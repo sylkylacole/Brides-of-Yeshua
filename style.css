@@ -152,11 +152,16 @@ nav ul li a:hover {
 
 /* About */
 
+#about {
+    margin-bottom: 10rem;
+}
+
 
 #about-logo {
     width: 20%;
     margin: 2.5% auto;
     display: block;
+    border-radius: 15px;
 }
 
 
@@ -176,6 +181,7 @@ nav ul li a:hover {
 iframe {
     border: none;
     margin: 1% 2.5%;
+    border-radius: 15px;
 }
 
 .video-row {
@@ -207,6 +213,11 @@ iframe {
     width: 25%;
     height: auto;
     margin: 0 2.5%;
+    border-radius: 15px;
+}
+
+.doc-rec:hover {
+    cursor: pointer;
 }
 
 .doc-head {
@@ -231,6 +242,8 @@ iframe {
     height: 3rem;
     border: none;
     background-color: #cdb4db;
+    border-radius: 15px;
+    color: white;
 }
 
 #docs button a {
@@ -276,6 +289,7 @@ form input, form textarea, form button, form label {
     box-sizing: border-box; /* Ensure padding doesn't affect width */
     margin-bottom: 2rem;
     font-family: Baloo2;
+    border-radius: 15px;
 }
 
 form label {
@@ -294,6 +308,7 @@ input:active, textarea:active, button:active {
     outline: #cdb4db;
 }
 
+
 form button {
     color: white;
     font-weight: bold;
@@ -304,3 +319,16 @@ form button:hover {
     cursor: pointer;
     background-color: #a2d2ff;
 }
+
+/* Footer */
+
+footer {
+    background-color: #00000000;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 5%;
+    font-family: Baloo2;
+}
+
+footer a {
+    color: #cdb4db;}
